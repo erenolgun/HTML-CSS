@@ -1,0 +1,17 @@
+<svg id="instagram" xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 50 50">
+  <g id="Group_4" data-name="Group 4">
+    <g id="Group_3" data-name="Group 3">
+      <path id="Path_3" data-name="Path 3" d="M34.375,0H15.625A15.627,15.627,0,0,0,0,15.625v18.75A15.627,15.627,0,0,0,15.625,50h18.75A15.627,15.627,0,0,0,50,34.375V15.625A15.627,15.627,0,0,0,34.375,0ZM45.313,34.375A10.95,10.95,0,0,1,34.375,45.313H15.625A10.95,10.95,0,0,1,4.688,34.375V15.625A10.95,10.95,0,0,1,15.625,4.688h18.75A10.95,10.95,0,0,1,45.313,15.625Z" fill="#fff"/>
+    </g>
+  </g>
+  <g id="Group_6" data-name="Group 6" transform="translate(3 3)">
+    <g id="Group_5" data-name="Group 5" transform="translate(10 10)">
+      <path id="Path_4" data-name="Path 4" d="M140.5,128A12.5,12.5,0,1,0,153,140.5,12.5,12.5,0,0,0,140.5,128Zm0,20.313a7.813,7.813,0,1,1,7.813-7.812A7.823,7.823,0,0,1,140.5,148.313Z" transform="translate(-128 -128)" fill="#fff"/>
+    </g>
+  </g>
+  <g id="Group_8" data-name="Group 8" transform="translate(-341 -93)">
+    <g id="Group_7" data-name="Group 7" transform="translate(376.544 101.344)">
+      <circle id="Ellipse_1" data-name="Ellipse 1" cx="2" cy="2" r="2" fill="#fff"/>
+    </g>
+  </g>
+</svg>
