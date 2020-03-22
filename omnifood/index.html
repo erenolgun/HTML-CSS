@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="vendors/css/normalize.css" />
     <link rel="stylesheet" href="vendors/css/grid.css" />
     <link rel="stylesheet" href="vendors/css/ionicons.min.css" />
+    <link rel="stylesheet" href="vendors/css/animate.css" />
     <link rel="stylesheet" href="resources/css/stlye.css" />
     <link rel="stylesheet" href="resources/css/queries.css" />
     <link
@@ -16,31 +17,42 @@
   </head>
   <body>
     <header>
-      <div class="row">
-        <img
-          src="resources/img/logo-white.png"
-          alt="Omnifood Logo"
-          class="logo"
-        />
-        <ul class="main-nav">
-          <li><a href="#">Food delivery</a></li>
-          <li><a href="#">How it works</a></li>
-          <li><a href="#">Our cities</a></li>
-          <li><a href="#">Sign up</a></li>
-        </ul>
-      </div>
+      <nav>
+        <div class="row">
+          <img
+            src="resources/img/logo-white.png"
+            alt="Omnifood Logo"
+            class="logo"
+          />
+          <img
+            src="resources/img/logo.png"
+            alt="Omnifood Logo"
+            class="logo-black"
+          />
+          <ul class="main-nav js--main-nav">
+            <li><a href="#features">Food delivery</a></li>
+            <li><a href="#works">How it works</a></li>
+            <li><a href="#cities">Our cities</a></li>
+            <li><a href="#plans">Sign up</a></li>
+          </ul>
+
+          <a class="mobile-nav-icon js--nav-icon" href="#"
+            ><ion-icon name="reorder-three-outline"></ion-icon
+          ></a>
+        </div>
+      </nav>
 
       <div class="hero-text-box">
         <h1>
           Goodbye junk food. <br />
           Hello super healthy meals.
         </h1>
-        <a class="btn btn-full" href="#">I’m hungry</a>
-        <a class="btn btn-ghost" href="#">Show me more </a>
+        <a class="btn btn-full js--scroll-to-plans" href="#">I’m hungry</a>
+        <a class="btn btn-ghost js--scroll-to-start" href="#">Show me more </a>
       </div>
     </header>
 
-    <section class="section-features">
+    <section class="section-features js--section-features" id="features">
       <div class="row">
         <h2>Get food fast &mdash; not fast food</h2>
         <p class="long-copy">
@@ -50,7 +62,7 @@
         </p>
       </div>
 
-      <div class="row">
+      <div class="row js--wp-1">
         <div class="col span-1-of-4 box">
           <ion-icon class="features-icon" name="infinite-outline"></ion-icon>
           <h3>Up to 365 days/year</h3>
@@ -216,12 +228,12 @@
       </div>
     </section>
 
-    <section class="section-cities">
+    <section class="section-cities" id="cities">
       <div class="row">
         <h2>We're currently in these cities</h2>
       </div>
 
-      <div class="row">
+      <div class="row js--wp-3">
         <div class="col span-1-of-4 box">
           <img src="resources/img/lisbon-3.jpg" alt="Lisbon" />
           <h3>Lisbon</h3>
@@ -325,14 +337,14 @@
       </div>
     </section>
 
-    <section class="section-plans">
+    <section class="section-plans js--section-plans" id="plans">
       <div class="row">
         <h2>Start eating healthy today</h2>
       </div>
 
       <div class="row">
         <div class="col span-1-of-3">
-          <div class="plan-box">
+          <div class="plan-box js--wp-4">
             <div>
               <h3>premium</h3>
               <p class="plan-price">$399 <span>/ month</span></p>
@@ -589,7 +601,13 @@
         </p>
       </div>
     </footer>
-
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/respond.js@1.4.2/dest/respond.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/html5shiv@3.7.3/dist/html5shiv.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/selectivizr@1.0.3/selectivizr.min.js "></script>
     <script src="https://unpkg.com/ionicons@5.0.0/dist/ionicons.js"></script>
+
+    <script src="resources/js/script.js"></script>
+    <script src="vendors/js/jquery.waypoints.min.js"></script>
   </body>
 </html>

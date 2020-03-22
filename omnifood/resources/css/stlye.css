@@ -131,6 +131,7 @@ input[type="submit"] {
   text-decoration: none;
   border-radius: 200px;
   color: white;
+  -webkit-transition: background-color 0.2s, color 0.2s, border 0.2s;
   transition: background-color 0.2s, color 0.2s, border 0.2s;
 }
 
@@ -175,6 +176,14 @@ input[type="submit"] {
 /* ----- HEADER ----- */
 
 header {
+  background-image: -webkit-gradient(
+      linear,
+      left top,
+      left bottom,
+      from(rgba(0, 0, 0, 0.7)),
+      to(rgba(0, 0, 0, 0.7))
+    ),
+    url(img/hero.jpg);
   background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
     url(img/hero.jpg);
   background-size: cover;
@@ -188,6 +197,7 @@ header {
   width: 1140px;
   top: 50%;
   left: 50%;
+  -webkit-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
 }
 
@@ -198,10 +208,20 @@ header {
   margin-top: 20px;
 }
 
+.logo-black {
+  display: none;
+  height: 50px;
+  width: auto;
+  float: left;
+  margin: 5px 0;
+}
+
+/* ----- Main Nav ----- */
+
 .main-nav {
   float: right;
   list-style: none;
-  margin-top: 60px;
+  margin-top: 55px;
 }
 
 .main-nav li {
@@ -211,18 +231,61 @@ header {
 
 .main-nav li a:link,
 .main-nav li a:visited {
+  padding: 8px 0;
   color: #fff;
   text-decoration: none;
   text-transform: uppercase;
   font-size: 90%;
-  padding-bottom: 5px;
   border-bottom: 2px solid transparent;
+  -webkit-transition: border-bottom 0.2s;
   transition: border-bottom 0.2s;
 }
 
 .main-nav li a:hover,
 .main-nav li a:active {
   border-bottom: 2px solid #e67e22;
+}
+
+/* ----- MOBILE NAV ----- */
+.mobile-nav-icon {
+  float: right;
+  margin-top: 30px;
+  cursor: pointer;
+  display: none;
+}
+
+.mobile-nav-icon ion-icon {
+  font-size: 200%;
+  color: white;
+}
+
+/* ----- STICKY NAV ----- */
+
+.sticky {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0.98);
+  box-shadow: 0 2px 2px #efefef;
+  z-index: 9999;
+}
+
+.sticky .main-nav {
+  margin-top: 18px;
+}
+
+.sticky .main-nav li a:link,
+.sticky .main-nav li a:visited {
+  padding: 16px 0;
+  color: #555;
+}
+
+.sticky .logo {
+  display: none;
+}
+.sticky .logo-black {
+  display: block;
 }
 
 /* ----- MEALS ----- */
@@ -253,12 +316,17 @@ header {
   opacity: 0.7;
   width: 100%;
   height: auto;
+  -webkit-transform: scale(1.15);
   transform: scale(1.15);
+  -webkit-transition: -webkit-transform 0.5s;
+  transition: -webkit-transform 0.5s;
   transition: transform 0.5s;
+  transition: transform 0.5s, -webkit-transform 0.5s;
 }
 
 .meal-photo img:hover {
   opacity: 1;
+  -webkit-transform: scale(1.03);
   transform: scale(1.03);
 }
 
@@ -329,6 +397,7 @@ a:visited {
   color: #e67e22;
   border-bottom: 1px solid #e67e22;
   padding-bottom: 1px;
+  -webkit-transition: color 0.2s, border 0.2s;
   transition: color 0.2s, border 0.2s;
 }
 
@@ -343,6 +412,14 @@ a:active {
 /* ----- TESTIMONIALS ----- */
 
 .section-testimonials {
+  background-image: -webkit-gradient(
+      linear,
+      left top,
+      left bottom,
+      from(rgba(0, 0, 0, 0.8)),
+      to(rgba(0, 0, 0, 0.8))
+    ),
+    url(/resources/css/img/back-customers.jpg);
   background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),
     url(/resources/css/img/back-customers.jpg);
   background-size: cover;
@@ -503,6 +580,7 @@ footer {
   text-decoration: none;
   border: 0;
   color: #888;
+  -webkit-transition: color 0.2s;
   transition: color 0.2s;
 }
 
@@ -520,6 +598,7 @@ footer {
 .twitter,
 .google,
 .instagram {
+  -webkit-transition: color 0.2s;
   transition: color 0.2s;
 }
 
@@ -543,4 +622,25 @@ footer p {
   color: #888;
   text-align: center;
   margin-top: 30px;
+}
+
+/* ----- ANIMATIONS ----- */
+
+.js--wp-1,
+.js--wp-2,
+.js--wp-3 {
+  opacity: 0;
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+}
+
+.js--wp-4 {
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+}
+
+.js--wp-1 .animated,
+.js--wp-2 .animated,
+.js--wp-3 .animated {
+  opacity: 1;
 }
